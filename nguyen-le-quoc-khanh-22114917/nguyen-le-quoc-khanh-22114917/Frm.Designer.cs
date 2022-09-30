@@ -1,6 +1,6 @@
 ﻿namespace nguyen_le_quoc_khanh_22114917
 {
-    partial class Form1
+    partial class Frm
     {
         /// <summary>
         ///  Required designer variable.
