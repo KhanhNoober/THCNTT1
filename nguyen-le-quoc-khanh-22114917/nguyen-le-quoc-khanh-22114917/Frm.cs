@@ -1,12 +1,12 @@
 
 namespace nguyen_le_quoc_khanh_22114917
 {
-    public partial class Form1 : Form
+    public partial class Frm : Form
     {
         private int _redLight;
         private int _yellowLight;
         private int _greenLight;
-        public Form1()
+        public Frm()
         {
             InitializeComponent();
             this._redLight = 40;

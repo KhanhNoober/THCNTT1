@@ -29,50 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel_red_light = new System.Windows.Forms.Panel();
-            this.pnl_yellow_light = new System.Windows.Forms.Panel();
-            this.pnl_green_light = new System.Windows.Forms.Panel();
+            this.pnl_background = new System.Windows.Forms.Panel();
             this.lbl_timer_countdown = new System.Windows.Forms.Label();
+            this.pnl_green_light = new System.Windows.Forms.Panel();
+            this.pnl_yellow_light = new System.Windows.Forms.Panel();
+            this.pnl_red_light = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel1.SuspendLayout();
+            this.pnl_background.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnl_background
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
-            this.panel1.Controls.Add(this.lbl_timer_countdown);
-            this.panel1.Controls.Add(this.pnl_green_light);
-            this.panel1.Controls.Add(this.pnl_yellow_light);
-            this.panel1.Controls.Add(this.panel_red_light);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(132, 426);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel_red_light
-            // 
-            this.panel_red_light.BackColor = System.Drawing.Color.Red;
-            this.panel_red_light.Location = new System.Drawing.Point(24, 122);
-            this.panel_red_light.Name = "panel_red_light";
-            this.panel_red_light.Size = new System.Drawing.Size(87, 81);
-            this.panel_red_light.TabIndex = 0;
-            // 
-            // pnl_yellow_light
-            // 
-            this.pnl_yellow_light.BackColor = System.Drawing.Color.Yellow;
-            this.pnl_yellow_light.Location = new System.Drawing.Point(24, 225);
-            this.pnl_yellow_light.Name = "pnl_yellow_light";
-            this.pnl_yellow_light.Size = new System.Drawing.Size(87, 81);
-            this.pnl_yellow_light.TabIndex = 1;
-            // 
-            // pnl_green_light
-            // 
-            this.pnl_green_light.BackColor = System.Drawing.Color.Lime;
-            this.pnl_green_light.Location = new System.Drawing.Point(24, 327);
-            this.pnl_green_light.Name = "pnl_green_light";
-            this.pnl_green_light.Size = new System.Drawing.Size(87, 81);
-            this.pnl_green_light.TabIndex = 1;
+            this.pnl_background.BackColor = System.Drawing.SystemColors.MenuText;
+            this.pnl_background.Controls.Add(this.lbl_timer_countdown);
+            this.pnl_background.Controls.Add(this.pnl_green_light);
+            this.pnl_background.Controls.Add(this.pnl_yellow_light);
+            this.pnl_background.Controls.Add(this.pnl_red_light);
+            this.pnl_background.Location = new System.Drawing.Point(12, 12);
+            this.pnl_background.Name = "pnl_background";
+            this.pnl_background.Size = new System.Drawing.Size(132, 426);
+            this.pnl_background.TabIndex = 0;
             // 
             // lbl_timer_countdown
             // 
@@ -86,30 +62,54 @@
             this.lbl_timer_countdown.Text = "00";
             this.lbl_timer_countdown.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pnl_green_light
+            // 
+            this.pnl_green_light.BackColor = System.Drawing.Color.Lime;
+            this.pnl_green_light.Location = new System.Drawing.Point(24, 327);
+            this.pnl_green_light.Name = "pnl_green_light";
+            this.pnl_green_light.Size = new System.Drawing.Size(87, 81);
+            this.pnl_green_light.TabIndex = 1;
+            // 
+            // pnl_yellow_light
+            // 
+            this.pnl_yellow_light.BackColor = System.Drawing.Color.Yellow;
+            this.pnl_yellow_light.Location = new System.Drawing.Point(24, 225);
+            this.pnl_yellow_light.Name = "pnl_yellow_light";
+            this.pnl_yellow_light.Size = new System.Drawing.Size(87, 81);
+            this.pnl_yellow_light.TabIndex = 1;
+            // 
+            // pnl_red_light
+            // 
+            this.pnl_red_light.BackColor = System.Drawing.Color.Red;
+            this.pnl_red_light.Location = new System.Drawing.Point(24, 122);
+            this.pnl_red_light.Name = "pnl_red_light";
+            this.pnl_red_light.Size = new System.Drawing.Size(87, 81);
+            this.pnl_red_light.TabIndex = 0;
+            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Form1
+            // Frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 450);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Controls.Add(this.pnl_background);
+            this.Name = "Frm";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnl_background.ResumeLayout(false);
+            this.pnl_background.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Panel panel1;
+        private Panel pnl_background;
         private Panel pnl_green_light;
         private Panel pnl_yellow_light;
-        private Panel panel_red_light;
+        private Panel pnl_red_light;
         private Label lbl_timer_countdown;
         private System.Windows.Forms.Timer timer1;
     }
